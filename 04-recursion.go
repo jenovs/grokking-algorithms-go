@@ -32,3 +32,22 @@ func findMax(s []int, m int) int {
 
 	return findMax(s[1:], max)
 }
+
+func binarySearchRecursive(s []int, n int) bool {
+	if len(s) == 0 {
+		return false
+	}
+
+	if len(s) == 1 {
+		return s[0] == n
+	}
+
+	m := (len(s) - 1) / 2
+	if s[m] == n {
+		return true
+	} else if s[m] > n {
+		return binarySearchRecursive(s[:m], n)
+	} else {
+		return binarySearchRecursive(s[m:], n)
+	}
+}
