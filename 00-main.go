@@ -27,4 +27,13 @@ func main() {
 	fmt.Println("\n04 - Recursive binary search")
 	fmt.Printf("%v in %v: %v\n", 4, s1, binarySearchRecursive(s1, 4))
 	fmt.Printf("%v in %v: %v\n", 3, s1, binarySearchRecursive(s1, 3))
+
+	fmt.Println("\n05 - Hash tables")
+	fmt.Printf("Hash of Esther: %v\n", simpleHash("Esther"))
+	fmt.Printf("Hash of Ben: %v\n", simpleHash("Ben"))
+	fmt.Printf("Hash of Bob: %v\n", simpleHash("Bob"))
+	fmt.Printf("Hash of Dan: %v\n", simpleHash("Dan"))
+	fmt.Printf("Hash of Maus: %v\n", simpleHash("Maus"))
+	fmt.Printf("Hash of Fun Home: %v\n", simpleHash("Fun Home"))
+	fmt.Printf("Hash of Watchmen: %v\n", simpleHash("Watchmen"))
 }
