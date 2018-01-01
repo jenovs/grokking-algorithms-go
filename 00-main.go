@@ -36,4 +36,7 @@ func main() {
 	fmt.Printf("Hash of Maus: %v\n", simpleHash("Maus"))
 	fmt.Printf("Hash of Fun Home: %v\n", simpleHash("Fun Home"))
 	fmt.Printf("Hash of Watchmen: %v\n", simpleHash("Watchmen"))
+
+	fmt.Println("\n07 - Dijkstra's algorithm")
+	dijkstra()
 }
